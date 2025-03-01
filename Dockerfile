@@ -33,7 +33,7 @@ WORKDIR /mtbimporter
 
 RUN mvn install -Dmaven.javadoc.skip=true -Dmaven.test.skip=true
 
-FROM r-base:4.4.1
+FROM r-base:4.4.3
 
 RUN apt-get update && apt-get install -y openjdk-21-jre docker-cli
 
