@@ -1,4 +1,4 @@
-FROM maven:3-eclipse-temurin-21 as build
+FROM maven:3-eclipse-temurin-17 as build
 
 RUN apt-get update && apt-get -y install git
 
@@ -35,7 +35,7 @@ RUN mvn install -Dmaven.javadoc.skip=true -Dmaven.test.skip=true
 
 FROM r-base:4.4.3
 
-RUN apt-get update && apt-get install -y openjdk-21-jre docker-cli
+RUN apt-get update && apt-get install -y openjdk-17-jre docker-cli
 
 COPY --from=build /mtbimporter/target/mtbimporter-*-jar-with-dependencies.jar /app/mtbimporter.jar
 ENTRYPOINT ["java", "-jar", "/app/mtbimporter.jar"]
