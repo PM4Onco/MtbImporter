@@ -59,7 +59,7 @@ docker:
     workdir: /home/user/git/MIRACUM-cbioportal
     serviceName: cbioportal
   studyFolder:  /study
-  #imageName: ghcr.io/buschlab/cbioportal:latest
+  #imageName: ghcr.io/pm4onco/cbioportal:latest
   #containerName: cbioportal_container
   #networkName: miracum-cbioportal_cbioportal_net
   #propertiesFile: /Users/nreimer/git/MIRACUM-cbioportal/config/portal.properties

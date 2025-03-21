@@ -28,5 +28,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/buschlab/mtbimporter:latest
+          tags: ghcr.io/pm4onco/mtbimporter:latest
           platforms: linux/amd64,linux/arm64/v8

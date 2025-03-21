@@ -18,7 +18,7 @@ import org.tinylog.Logger;
 /**
  * Fully automated data import tool for cBioPortal
  * (https://github.com/cbioportal/cbioportal). Best deployed with
- * MIRACUM-cBioPortal (https://github.com/buschlab/MIRACUM-cbioportal) and
+ * MIRACUM-cBioPortal (https://github.com/PM4Onco/MTB-cbioportal) and
  * MIRACUM-Pipe (https://github.com/AG-Boerries/MIRACUM-Pipe-docker).
  */
 public final class MtbImporter {
