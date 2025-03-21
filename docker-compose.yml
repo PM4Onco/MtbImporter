@@ -3,7 +3,7 @@ services:
   mtbimporter:
     restart: unless-stopped
     build: ./
-    image: ghcr.io/buschlab/mtbimporter:latest
+    image: ghcr.io/pm4onco/mtbimporter:latest
     command: "/app/settings.yaml"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
@@ -18,5 +18,5 @@ services:
       - miracum-cbioportal_cbioportal_net
 
 networks:
-  miracum-cbioportal_cbioportal_net:
+  mtb-cbioportal_cbioportal_net:
     external: true
